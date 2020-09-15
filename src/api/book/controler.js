@@ -1,19 +1,19 @@
-const bookControler = {
-    data : [
-        {
-            id:0,
-            title:"Web Development with Node and Express",
-            authors: ["Ethan Brown"],
-            price:50.00 
-        },
-        {
-            id:1,
-            title:"Design Patterns",
-            authors: ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"],
-            price:69.90
-        }
-    ],
-    maxId: data.length, 
+let data = [
+    {
+        id:0,
+        title:"Web Development with Node and Express",
+        authors: ["Ethan Brown"],
+        price:50.00 
+    },
+    {
+        id:1,
+        title:"Design Patterns",
+        authors: ["Erich Gamma", "Richard Helm", "Ralph Johnson", "John Vlissides"],
+        price:69.90
+    }
+];
+let maxId =  data.length; 
+const bookControler = {    
     get: (req, res) => {
         let books = data;
         if (req.query.maxprice){
