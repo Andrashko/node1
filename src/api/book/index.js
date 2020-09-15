@@ -1,5 +1,5 @@
 import {Router} from "express";
-import bookControler from "./controler";
+import bookControler from "./dbcontroler";
 
 const bookRouter = new Router();
 bookRouter.get("/", bookControler.get); 
